@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQube</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header-strip">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#top" class="back-to-top">
+                    <img src="logo.png" alt="MediQube Logo"> <!-- Replace with logo image -->
+                </a>
+            </div>
+            <div class="banner-text">
+                <a href="#top" class="back-to-top"><h1>mediqube</h1></a> <!-- Your banner text -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page1">
+            <div class="page1content">
+                <h2>Innovative Solutions<br>for Medical Data<br>Management</h2>
+            </div>
+            <div class="page1content2">
+    
+                <span class="h3">Leave the tech to us.</span>
+               
+            <a href="#page3" class="button">Learn More</a>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer">
+                <p>&copy; 2024 MediQube. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling
+        document.addEventListener("DOMContentLoaded", function() {
+            var backToTopBtn = document.querySelector(".back-to-top");
+
+            backToTopBtn.addEventListener("click", function(event) {
+                event.preventDefault();
+
+                // Delay in milliseconds (1000 ms = 1 second)
+                var delay = 100; // Adjust delay as needed
+
+                // Set timeout to scroll after delay
+                setTimeout(function() {
+                    // Scroll to top smoothly
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                }, delay);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+/* Reset some default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove underline and inherit color from parent for links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #E8FFC8, #FFD8BE, #B7E3FF);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Basic styles for the header strip */
+.header-strip {
+    background-color: #ffffff; /* White background */
+    padding: 20px 0; /* Padding for top and bottom */
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    position: fixed;
+    width: 100%; /* Make the header strip full width */
+    z-index: 1000; /* Ensure it's above other content */
+    border-radius: 0px 0px 5px 5px; /* Rounded corners for top-left and top-right */
+}
+
+/* Container to center content and limit width */
+.container {
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center align */
+    display: flex;
+    justify-content: center; /* Align items center */
+    align-items: center; /* Center align items vertically */
+    padding: 0 20px; /* Optional: Add padding */
+}
+
+/* Logo styles */
+.logo img {
+    height: 60px; /* Adjust height of the logo */
+    /* Optional: Add margin or padding */
+}
+
+/* Banner text styles */
+.banner-text h1 {
+    font-family: 'Varela Round', sans-serif; /* Font family */
+    font-size: 28px; /* Font size */
+    color: black; /* Text color */
+    font-weight: 300; /* Adjust font weight for lighter text */
+    /* Additional styles */
+}
+
+/* Main styles */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; /* Padding around the main content */
+}
+
+/* Section styles */
+section {
+    background-color: #fff; /* Background color for sections */
+    margin-bottom: 20px; /* Bottom margin between sections */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
+}
+
+.page1 {
+    flex: 1;
+    background-image: url('page1.png'); /* Replace with your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center align the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start (left) */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add some left padding */
+}
+
+
+
+.page1content {
+    color: #000000; /* Text color for headings */
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.page1content h2 {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-weight: lighter;
+    font-size: 80px; /* Font size for section headings */
+    padding: 100px 20px; /* Padding for top and bottom */
+}
+
+.page1content2 {
+    width: 100%;
+    max-width: 20000px;
+    padding: 120px;
+    padding-top: 200px;
+}
+
+.h3 {
+    font-family: 'Nunito Sans', sans-serif; /* Font family */
+    font-weight: lighter;
+    font-size: 35px; /* Font size for section headings */
+    padding-left: 1000px; /* Increase left padding to move h3 to the right */
+    padding-right: 45px;
+    margin: 0; /* Remove margin */
+}
+
+/* Button styles */
+.button {
+    
+    padding: 15px 30px; /* Padding for the button */
+    background-color: #000000; /* Background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Make it behave like a button */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 500; /* Font weight */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Margin for spacing */
+    text-align: center; /* Center align text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffffff; /* Footer background color */
+    padding: 10px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+    position: fixed; /* Fixed positioning to stay at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Align at the bottom */
+    font-size: 12px;
+}
+
+/* Footer container */
+footer .container {
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center align */
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center align items */
+    }
+    .logo img {
+        margin-bottom: 10px; /* Optional: Add margin below logo on smaller screens */
+    }
+}
